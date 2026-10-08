@@ -88,6 +88,40 @@
                 %h2 Planet
                 %h1 Mercury
                 %p The closest planet to the sun. It circles the sun faster than all the other planets, which is why Romans named it after their swift-footed messenger god.
+                .planet-data
+                    %table.planet-stats
+                        %tbody
+                            %tr
+                                %th Distance
+                                %td 0.39 AU (57.9M km)
+                            %tr
+                                %th Diameter
+                                %td 4,879 km
+                            %tr
+                                %th Mass
+                                %td 0.055 × Earth
+                            %tr
+                                %th Day
+                                %td 1,408 h
+                            %tr
+                                %th Year
+                                %td 88 days
+                            %tr
+                                %th Temp
+                                %td -180°C / +430°C
+                            %tr
+                                %th Moons
+                                %td 0
+                            %tr
+                                %th Atmosphere
+                                %td None (traces of O₂, Na)
+                .planet-facts
+                    %h3 Fun Facts
+                    %ul
+                        %li A year on Mercury lasts only 88 Earth days, but a day lasts 1,408 hours — longer than its year.
+                        %li Mercury has ice in permanently shadowed craters near its poles, despite being the closest planet to the Sun.
+                .planet-nasa-link
+                    %a{:href => 'https://solarsystem.nasa.gov/planets/mercury/overview/', :target => '_blank', :rel => 'noopener'} Learn more →
                 %label{:for => 'readMercury'}
                     %a 
                         Read Mor
@@ -99,6 +133,40 @@
                 %h2 Planet
                 %h1 Venus
                 %p Named for the Roman goddess of love and beauty. In ancient times, Venus was often thought to be two different stars, the evening star and the morning star.
+                .planet-data
+                    %table.planet-stats
+                        %tbody
+                            %tr
+                                %th Distance
+                                %td 0.72 AU (108.2M km)
+                            %tr
+                                %th Diameter
+                                %td 12,104 km
+                            %tr
+                                %th Mass
+                                %td 0.815 × Earth
+                            %tr
+                                %th Day
+                                %td 5,832 h (retrograde)
+                            %tr
+                                %th Year
+                                %td 225 days
+                            %tr
+                                %th Temp
+                                %td +465°C (average)
+                            %tr
+                                %th Moons
+                                %td 0
+                            %tr
+                                %th Atmosphere
+                                %td CO₂ (96%), N₂
+                .planet-facts
+                    %h3 Fun Facts
+                    %ul
+                        %li Venus rotates so slowly and backwards that the Sun rises in the west.
+                        %li The atmospheric pressure on Venus is 92× that of Earth — equivalent to being 900m underwater.
+                .planet-nasa-link
+                    %a{:href => 'https://solarsystem.nasa.gov/planets/venus/overview/', :target => '_blank', :rel => 'noopener'} Learn more →
                 %label{:for => 'readVenus'}
                     %a 
                         Read Mor
@@ -114,6 +182,46 @@
                 %h2 Planet
                 %h1 Earth
                 %p Earth, our home. It is the only planet known to have an atmosphere containing free oxygen, oceans of liquid water on its surface, and, of course, life.
+                .planet-data
+                    %table.planet-stats
+                        %tbody
+                            %tr
+                                %th Distance
+                                %td 1.00 AU (149.6M km)
+                            %tr
+                                %th Diameter
+                                %td 12,742 km
+                            %tr
+                                %th Mass
+                                %td 1 × Earth
+                            %tr
+                                %th Day
+                                %td 24 h
+                            %tr
+                                %th Year
+                                %td 365.25 days
+                            %tr
+                                %th Temp
+                                %td -88°C / +58°C
+                            %tr
+                                %th Moons
+                                %td 1 (Moon)
+                            %tr
+                                %th Atmosphere
+                                %td N₂ (78%), O₂ (21%)
+                .planet-facts
+                    %h3 Fun Facts
+                    %ul
+                        %li Earth is the only known planet to harbor life, and its large Moon stabilizes its axial tilt.
+                        %li Earth's core is as hot as the surface of the Sun — around 5,500°C.
+                .planet-nasa-link
+                    %a{:href => 'https://solarsystem.nasa.gov/planets/earth/overview/', :target => '_blank', :rel => 'noopener'} Learn more →
+                .planet-moons-detail
+                    %h3 Notable Moons
+                    %ul
+                        %li
+                            %strong Moon
+                            — Only natural satellite, stabilizes Earth's tilt
                 %label{:for => 'readEarth'}
                     %a 
                         Read Mor
@@ -125,14 +233,57 @@
                 %h3 Moon
                 %h2 Deimos
             .trajectory.d
-            .moon.phoebos
+            .moon.phobos
                 %h3 Moon
-                %h2 Phoebos
+                %h2 Phobos
             .trajectory.p
             .planet_description.mars
                 %h2 Planet
                 %h1 Mars
                 %p Fourth planet from the Sun and the second smallest planet in the solar system. Named after the Roman god of war often described as the “Red Planet”.
+                .planet-data
+                    %table.planet-stats
+                        %tbody
+                            %tr
+                                %th Distance
+                                %td 1.52 AU (227.9M km)
+                            %tr
+                                %th Diameter
+                                %td 6,779 km
+                            %tr
+                                %th Mass
+                                %td 0.107 × Earth
+                            %tr
+                                %th Day
+                                %td 24.6 h
+                            %tr
+                                %th Year
+                                %td 687 days
+                            %tr
+                                %th Temp
+                                %td -125°C / +20°C
+                            %tr
+                                %th Moons
+                                %td 2 (Phobos, Deimos)
+                            %tr
+                                %th Atmosphere
+                                %td CO₂ (95%), N₂
+                .planet-facts
+                    %h3 Fun Facts
+                    %ul
+                        %li Olympus Mons on Mars is the tallest volcano in the Solar System at 21.9 km high.
+                        %li Mars has the longest canyon system: Valles Marineris stretches over 4,000 km.
+                .planet-nasa-link
+                    %a{:href => 'https://solarsystem.nasa.gov/planets/mars/overview/', :target => '_blank', :rel => 'noopener'} Learn more →
+                .planet-moons-detail
+                    %h3 Notable Moons
+                    %ul
+                        %li
+                            %strong Phobos
+                            — Will crash into Mars in ~50M years
+                        %li
+                            %strong Deimos
+                            — Rises in the east and takes ~2.7 sols to cross the sky; will eventually escape Mars's gravity
                 %label{:for => 'readMars'}
                     %a 
                         Read Mor
@@ -156,6 +307,55 @@
                 %h2 Planet
                 %h1 Jupiter
                 %p Jupiter is the largest planet in the solar system. Fittingly, it was named after the king of the gods in Roman mythology. 
+                .planet-data
+                    %table.planet-stats
+                        %tbody
+                            %tr
+                                %th Distance
+                                %td 5.20 AU (778.5M km)
+                            %tr
+                                %th Diameter
+                                %td 139,820 km
+                            %tr
+                                %th Mass
+                                %td 317.8 × Earth
+                            %tr
+                                %th Day
+                                %td 9.9 h
+                            %tr
+                                %th Year
+                                %td 4,333 days
+                            %tr
+                                %th Temp
+                                %td -110°C (cloud top)
+                            %tr
+                                %th Moons
+                                %td 95 confirmed
+                            %tr
+                                %th Atmosphere
+                                %td H₂ (90%), He (10%)
+                .planet-facts
+                    %h3 Fun Facts
+                    %ul
+                        %li Jupiter's Great Red Spot is a storm that has been raging for at least 350 years.
+                        %li Jupiter's moon Ganymede is the largest moon in the Solar System — bigger than Mercury.
+                .planet-nasa-link
+                    %a{:href => 'https://solarsystem.nasa.gov/planets/jupiter/overview/', :target => '_blank', :rel => 'noopener'} Learn more →
+                .planet-moons-detail
+                    %h3 Notable Moons
+                    %ul
+                        %li
+                            %strong Io
+                            — Most volcanically active body in the Solar System
+                        %li
+                            %strong Europa
+                            — Has a subsurface ocean, candidate for life
+                        %li
+                            %strong Ganymede
+                            — Largest moon in the Solar System
+                        %li
+                            %strong Callisto
+                            — Most heavily cratered object known
                 %label{:for => 'readJupiter'}
                     %a 
                         Read Mor
@@ -179,6 +379,52 @@
                 %h2 Planet
                 %h1 Saturn
                 %p Saturn is the sixth planet from the sun and the second largest planet in the solar system. Saturn was the Roman name for Cronus, the lord of the Titans.
+                .planet-data
+                    %table.planet-stats
+                        %tbody
+                            %tr
+                                %th Distance
+                                %td 9.58 AU (1,432M km)
+                            %tr
+                                %th Diameter
+                                %td 116,460 km
+                            %tr
+                                %th Mass
+                                %td 95.2 × Earth
+                            %tr
+                                %th Day
+                                %td 10.7 h
+                            %tr
+                                %th Year
+                                %td 10,759 days
+                            %tr
+                                %th Temp
+                                %td -140°C (cloud top)
+                            %tr
+                                %th Moons
+                                %td 146 confirmed
+                            %tr
+                                %th Atmosphere
+                                %td H₂ (96%), He (3%)
+                .planet-facts
+                    %h3 Fun Facts
+                    %ul
+                        %li Saturn's rings are made of ice and rock, spanning up to 282,000 km but only ~10m thick.
+                        %li Saturn is the only planet less dense than water — it would float in a big enough ocean.
+                .planet-nasa-link
+                    %a{:href => 'https://solarsystem.nasa.gov/planets/saturn/overview/', :target => '_blank', :rel => 'noopener'} Learn more →
+                .planet-moons-detail
+                    %h3 Notable Moons
+                    %ul
+                        %li
+                            %strong Titan
+                            — Has a thick atmosphere and liquid methane lakes
+                        %li
+                            %strong Enceladus
+                            — Geysers of water vapor hint at a subsurface ocean
+                        %li
+                            %strong Mimas
+                            — Resembles the Death Star
                 %label{:for => 'readSaturn'}
                     %a 
                         Read Mor
@@ -202,6 +448,52 @@
                 %h2 Planet
                 %h1 Uranus
                 %p The first planet to be discovered by scientists. The planet is notable for its dramatic tilt, which causes its axis to point nearly directly at the sun.
+                .planet-data
+                    %table.planet-stats
+                        %tbody
+                            %tr
+                                %th Distance
+                                %td 19.2 AU (2,867M km)
+                            %tr
+                                %th Diameter
+                                %td 50,724 km
+                            %tr
+                                %th Mass
+                                %td 14.5 × Earth
+                            %tr
+                                %th Day
+                                %td 17.2 h (retrograde)
+                            %tr
+                                %th Year
+                                %td 30,687 days
+                            %tr
+                                %th Temp
+                                %td -224°C (min recorded)
+                            %tr
+                                %th Moons
+                                %td 28 confirmed
+                            %tr
+                                %th Atmosphere
+                                %td H₂ (83%), He (15%), CH₄
+                .planet-facts
+                    %h3 Fun Facts
+                    %ul
+                        %li Uranus rotates on its side with an axial tilt of 98° — it essentially rolls around the Sun.
+                        %li Uranus was the first planet discovered with a telescope, by William Herschel in 1781.
+                .planet-nasa-link
+                    %a{:href => 'https://solarsystem.nasa.gov/planets/uranus/overview/', :target => '_blank', :rel => 'noopener'} Learn more →
+                .planet-moons-detail
+                    %h3 Notable Moons
+                    %ul
+                        %li
+                            %strong Miranda
+                            — Has the tallest known cliff in the Solar System (Verona Rupes, 20km)
+                        %li
+                            %strong Ariel
+                            — Brightest surface of Uranus's major moons, with relatively young terrain
+                        %li
+                            %strong Umbriel
+                            — Darkest and most ancient surface among the major Uranian moons
                 %label{:for => 'readUranus'}
                     %a 
                         Read Mor
@@ -225,6 +517,52 @@
                 %h2 Planet
                 %h1 Neptune
                 %p Neptune is the eighth and most distant planet from the Sun, located about 30 AU away. It is an ice giant with winds reaching up to 2,100 km/h — the strongest in the solar system. Its blue color comes from methane in its atmosphere. Neptune has 16 known moons, the largest being Triton, a captured Kuiper Belt object orbiting in retrograde.
+                .planet-data
+                    %table.planet-stats
+                        %tbody
+                            %tr
+                                %th Distance
+                                %td 30.1 AU (4,495M km)
+                            %tr
+                                %th Diameter
+                                %td 49,528 km
+                            %tr
+                                %th Mass
+                                %td 17.1 × Earth
+                            %tr
+                                %th Day
+                                %td 16.1 h
+                            %tr
+                                %th Year
+                                %td 60,190 days
+                            %tr
+                                %th Temp
+                                %td -218°C (average)
+                            %tr
+                                %th Moons
+                                %td 16 confirmed
+                            %tr
+                                %th Atmosphere
+                                %td H₂ (80%), He (19%), CH₄
+                .planet-facts
+                    %h3 Fun Facts
+                    %ul
+                        %li Neptune's winds are the fastest in the Solar System, reaching 2,100 km/h.
+                        %li Neptune's moon Triton orbits backwards and will eventually break apart to form a ring system in ~3.6 billion years.
+                .planet-nasa-link
+                    %a{:href => 'https://solarsystem.nasa.gov/planets/neptune/overview/', :target => '_blank', :rel => 'noopener'} Learn more →
+                .planet-moons-detail
+                    %h3 Notable Moons
+                    %ul
+                        %li
+                            %strong Triton
+                            — Orbits backwards; thought to be a captured Kuiper Belt Object
+                        %li
+                            %strong Proteus
+                            — Second-largest Neptune moon; an irregular dark body
+                        %li
+                            %strong Nereid
+                            — One of the most eccentric orbits of any moon in the Solar System
                 %label{:for => 'readNeptune'}
                     %a 
                         Read Mor
@@ -236,6 +574,40 @@
                 %h2 Dwarf planet
                 %h1 Pluto
                 %p Pluto, once considered the ninth and most distant planet from the sun, is now the largest known dwarf planet in the solar system.
+                .planet-data
+                    %table.planet-stats
+                        %tbody
+                            %tr
+                                %th Distance
+                                %td 39.48 AU (5,906M km)
+                            %tr
+                                %th Diameter
+                                %td 2,376 km
+                            %tr
+                                %th Mass
+                                %td 0.0022 × Earth
+                            %tr
+                                %th Day
+                                %td 153.3 h
+                            %tr
+                                %th Year
+                                %td 90,560 days
+                            %tr
+                                %th Temp
+                                %td -230°C (average)
+                            %tr
+                                %th Moons
+                                %td 5 (Charon, Nix, Hydra…)
+                            %tr
+                                %th Atmosphere
+                                %td N₂, CH₄, CO (tenuous)
+                .planet-facts
+                    %h3 Fun Facts
+                    %ul
+                        %li Pluto is smaller than Earth's Moon — its diameter is just 2,376 km.
+                        %li Its name was proposed by Venetia Burney, an 11-year-old schoolgirl from Oxford, in 1930.
+                .planet-nasa-link
+                    %a{:href => 'https://solarsystem.nasa.gov/planets/dwarf-planets/pluto/overview/', :target => '_blank', :rel => 'noopener'} Learn more →
                 %label{:for => 'readPluto'}
                     %a 
                         Read Mor

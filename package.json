@@ -1,0 +1,26 @@
+{
+  "name": "solar-system-explorer",
+  "version": "1.0.0",
+  "description": "Interactive solar system explorer built with pure CSS",
+  "scripts": {
+    "build:html": "haml src/index.haml dist/index.html",
+    "build:css": "sass src/style.scss dist/style.css",
+    "build": "npm run build:html && npm run build:css",
+    "build:prod": "npm run build:html && sass src/style.scss dist/style.min.css --style=compressed"
+  },
+  "devDependencies": {
+    "sass": "^1.69.0"
+  },
+  "keywords": [
+    "solar-system",
+    "css",
+    "haml",
+    "scss",
+    "interactive"
+  ],
+  "author": "Lord-Coding",
+  "license": "MIT",
+  "dependencies": {
+    "haml": "^0.4.3"
+  }
+}

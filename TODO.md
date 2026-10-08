@@ -27,22 +27,22 @@
 - [x] **Ajouter `<meta name="viewport">`** dans `src/index.haml`
 - [x] **Ajouter des attributs `alt`** sur toutes les images dans les panneaux de planètes
 - [x] **Ajouter des `aria-label`** sur les inputs radio et les éléments interactifs (accessibilité WCAG)
-- [ ] **Minifier le CSS** en production (`sass --style=compressed`) — `dist/style.css` fait 90KB non minifié
+- [x] **Minifier le CSS** en production (`sass --style=compressed`) — `dist/style.css` fait 90KB non minifié
 - [x] **Supprimer les commentaires de code déplacés** (ex. `# CloseUranus...lol`)
 
 ---
 
 ## 🟢 Faible (améliorations futures)
 
-- [ ] **Créer un `README.md`** — description du projet, aperçu visuel, instructions de build, crédits images/textures
-- [ ] **Configurer un CI minimal** (GitHub Actions) pour valider la compilation HAML/SCSS à chaque push
+- [x] **Créer un `README.md`** — description du projet, aperçu visuel, instructions de build, crédits images/textures
+- [x] **Configurer un CI minimal** (GitHub Actions) pour valider la compilation HAML/SCSS à chaque push
 - [ ] **Optimiser le chargement des images** — lazy loading, ou ne charger les textures qu'à la sélection de la planète
 
 ---
 
 ## ✨ Fonctionnalités — Plus de détails sur les planètes
 
-- [ ] **Enrichir les fiches planètes** avec des données scientifiques supplémentaires :
+- [x] **Enrichir les fiches planètes** avec des données scientifiques supplémentaires :
   - Distance au Soleil (min/max/moyenne)
   - Diamètre et masse
   - Durée du jour et de l'année
@@ -50,9 +50,9 @@
   - Nombre de lunes confirmées
   - Composition atmosphérique
   - Missions spatiales notables (Voyager, Cassini, New Horizons…)
-- [ ] **Ajouter une section "Faits insolites"** par planète (1 ou 2 anecdotes marquantes)
-- [ ] **Ajouter des liens vers des sources** (Wikipedia, NASA Solar System Exploration) dans chaque panneau
-- [ ] **Afficher les lunes dans le panneau de détail** — nom, taille, particularité pour les principales lunes (Titan, Europe, Ganymède, Io, Triton…)
+- [x] **Ajouter une section "Faits insolites"** par planète (1 ou 2 anecdotes marquantes)
+- [x] **Ajouter des liens vers des sources** (Wikipedia, NASA Solar System Exploration) dans chaque panneau
+- [x] **Afficher les lunes dans le panneau de détail** — nom, taille, particularité pour les principales lunes (Titan, Europe, Ganymède, Io, Triton…)
 - [ ] **Ajouter Pluton** en tant que planète naine avec une note sur son déclassement en 2006
 - [ ] **Ajouter d'autres planètes naines** (Cérès, Éris, Makémaké, Hauméa) dans une section optionnelle
 - [ ] **Comparateur de tailles** — un visuel CSS comparant la taille des planètes entre elles et par rapport au Soleil

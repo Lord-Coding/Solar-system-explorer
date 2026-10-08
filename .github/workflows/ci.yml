@@ -1,0 +1,30 @@
+name: Build Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Sass
+        run: npm install -g sass
+
+      - name: Compile SCSS
+        run: sass src/style.scss dist/style.css
+
+      - name: Install HAML gem
+        run: gem install haml
+
+      - name: Compile HAML
+        run: haml src/index.haml dist/index.html
+
+      - name: Verify output files exist
+        run: |
+          test -f dist/index.html && echo "HTML OK"
+          test -f dist/style.css && echo "CSS OK"
