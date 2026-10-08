@@ -1,0 +1,52 @@
+﻿DOWNLOAD REPORT
+===============
+Generated for: Solar System Explorer - Image Assets
+Target directory: dist/assets/
+
+--- TEXTURE IMAGES (CSS backgrounds) ---
+
+OK: texture-mercury.jpg (1179218 bytes)
+OK: texture-venus.jpg (353654 bytes)
+OK: texture-earth.jpg (40412 bytes)
+OK: texture-mars.jpg (373002 bytes)
+OK: texture-jupiter.jpg (176789 bytes)
+OK: texture-saturn.jpg (199916 bytes)
+OK: texture-uranus.png (512554 bytes)
+OK: texture-neptune.png (662672 bytes)
+OK: texture-pluto.png (1316921 bytes)
+
+--- PANEL IMAGES (HTML img tags) ---
+
+FAILED: panel-mercury.jpg - 404 Not Found (astronomytrek.com)
+FAILED: panel-venus.jpg - DNS resolution failed (3c1703fe8d.site.internapcdn.net no longer exists)
+OK: panel-earth.jpg (39738 bytes)
+OK: panel-mars.jpg (448256 bytes)
+FAILED: panel-jupiter.jpg - Connection refused (hanaleikauaivacation.com)
+OK: panel-saturn.jpg (31765 bytes)
+OK: panel-uranus.jpg (683248 bytes)
+FAILED: panel-neptune.jpg - 404 Not Found (encrypted-tbn0.gstatic.com)
+OK: panel-pluto.jpg (5362 bytes)
+
+--- SUMMARY ---
+
+SUCCEEDED (14/18) - local copies available in dist/assets/:
+  texture-mercury.jpg
+  texture-venus.jpg
+  texture-earth.jpg
+  texture-mars.jpg
+  texture-jupiter.jpg
+  texture-saturn.jpg
+  texture-uranus.png
+  texture-neptune.png
+  texture-pluto.png
+  panel-earth.jpg
+  panel-mars.jpg
+  panel-saturn.jpg
+  panel-uranus.jpg
+  panel-pluto.jpg
+
+FAILED (4/18) - external URLs must be kept or replaced:
+  panel-mercury.jpg  -> 404, URL dead. Needs replacement source.
+  panel-venus.jpg    -> DNS failure, domain gone. Needs replacement source.
+  panel-jupiter.jpg  -> Connection refused. Needs replacement source.
+  panel-neptune.jpg  -> 404, URL dead. Needs replacement source.

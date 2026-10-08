@@ -3,10 +3,11 @@
 ## 🔴 Critique (à corriger en priorité)
 
 - [x] **Corriger l'état Git** — les fichiers actifs (`dist/`, `src/`) ne sont pas trackés ; supprimer l'ancien chemin `Solar System Explorer/` (avec espace) et restager les bons fichiers
-- [x] **Créer un `package.json`** avec les scripts de build (`haml src/index.haml dist/index.html`, `sass src/style.scss dist/style.css`)
+- [x] **Créer un `package.json`** avec les scripts de build (`sass src/style.scss dist/style.css`)
 - [x] **Créer un `.gitignore`** (ignorer `node_modules/`, `.agents/`, fichiers OS, etc.)
 - [x] **Supprimer les 2 `@debug`** dans `src/style.scss` (lignes 590–591)
 - [x] **Corriger les `checked='checked'` multiples** dans `src/index.haml` — Mercury, Venus, Earth et Mars ont tous l'attribut en même temps ; garder uniquement Mercury comme sélection initiale
+- [x] **Migrer HAML → HTML natif** — `src/index.haml` supprimé, remplacé par `src/index.html` ; dépendance `haml` retirée de `package.json` ; CI mis à jour
 
 ---
 
@@ -36,7 +37,7 @@
 
 - [x] **Créer un `README.md`** — description du projet, aperçu visuel, instructions de build, crédits images/textures
 - [x] **Configurer un CI minimal** (GitHub Actions) pour valider la compilation HAML/SCSS à chaque push
-- [ ] **Optimiser le chargement des images** — lazy loading, ou ne charger les textures qu'à la sélection de la planète
+- [x] **Optimiser le chargement des images** — lazy loading, ou ne charger les textures qu'à la sélection de la planète
 
 ---
 
@@ -60,4 +61,4 @@
 
 ---
 
-*Dernière mise à jour : 07/10/2026*
+*Dernière mise à jour : 08/10/2026*

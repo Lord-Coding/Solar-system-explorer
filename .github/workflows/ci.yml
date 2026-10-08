@@ -12,17 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install Sass
-        run: npm install -g sass
+      - name: Install dependencies
+        run: npm install
 
       - name: Compile SCSS
-        run: sass src/style.scss dist/style.css
-
-      - name: Install HAML gem
-        run: gem install haml
-
-      - name: Compile HAML
-        run: haml src/index.haml dist/index.html
+        run: npm run build:css
 
       - name: Verify output files exist
         run: |
