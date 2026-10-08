@@ -1,7 +1,8 @@
-﻿%h1.logo
+﻿%meta{name: "viewport", content: "width=device-width, initial-scale=1"}
+%h1.logo
     Solar explorer
     %span in only CSS
-%input.planet9{:type => 'radio', :id => 'pluto', :name => 'planet'}
+%input.planet9{:type => 'radio', :id => 'pluto', :name => 'planet', 'aria-label' => 'Select Pluto'}
 %label.pluto.menu{:for => 'pluto'}
     .preview
     .info
@@ -9,7 +10,7 @@
             .pip
             Pluto
         %h3 39.5 AU
-%input.planet8{:type => 'radio', :id => 'neptune', :name => 'planet'}
+%input.planet8{:type => 'radio', :id => 'neptune', :name => 'planet', 'aria-label' => 'Select Neptune'}
 %label.neptune.menu{:for => 'neptune'}
     .preview
     .info
@@ -18,7 +19,7 @@
             Neptune
         %h3 30.06 AU
         
-%input.planet7{:type => 'radio', :id => 'uranus', :name => 'planet'}
+%input.planet7{:type => 'radio', :id => 'uranus', :name => 'planet', 'aria-label' => 'Select Uranus'}
 %label.uranus.menu{:for => 'uranus'}
     .preview
     .info
@@ -27,7 +28,7 @@
             Uranus
         %h3 19.18 AU
         
-%input.planet6{:type => 'radio', :id => 'saturn', :name => 'planet'}
+%input.planet6{:type => 'radio', :id => 'saturn', :name => 'planet', 'aria-label' => 'Select Saturn'}
 %label.saturn.menu{:for => 'saturn'}
     .preview
     .info
@@ -36,7 +37,7 @@
             Saturn
         %h3 9.539 AU
         
-%input.planet5{:type => 'radio', :id => 'jupiter', :name => 'planet'}
+%input.planet5{:type => 'radio', :id => 'jupiter', :name => 'planet', 'aria-label' => 'Select Jupiter'}
 %label.jupiter.menu{:for => 'jupiter'}
     .preview
     .info
@@ -44,7 +45,7 @@
             .pip
             Jupiter
         %h3 5.203 AU
-%input.planet4{:type => 'radio', :id => 'mars', :name => 'planet'}
+%input.planet4{:type => 'radio', :id => 'mars', :name => 'planet', 'aria-label' => 'Select Mars'}
 %label.menu.mars{:for => 'mars'}
     .preview
         
@@ -53,7 +54,7 @@
             .pip
             Mars
         %h3 1.524 AU
-%input.planet3{:type => 'radio', :id => 'earth', :name => 'planet'}
+%input.planet3{:type => 'radio', :id => 'earth', :name => 'planet', 'aria-label' => 'Select Earth'}
 %label.menu.earth{:for => 'earth'}
     .preview
         
@@ -62,7 +63,7 @@
             .pip
             Earth
         %h3 1 AU
-%input.planet2{:type => 'radio', :id => 'venus', :name => 'planet'}
+%input.planet2{:type => 'radio', :id => 'venus', :name => 'planet', 'aria-label' => 'Select Venus'}
 %label.menu.venus{:for => 'venus'}
     .preview
         
@@ -71,7 +72,7 @@
             .pip
             Venus
         %h3 0.723 AU
-%input.planet1{:type => 'radio', :id => 'mercury', :name => 'planet', :checked => 'checked'}
+%input.planet1{:type => 'radio', :id => 'mercury', :name => 'planet', :checked => 'checked', 'aria-label' => 'Select Mercury'}
 %label.menu.mercury{:for => 'mercury'}
     .preview
         
@@ -251,7 +252,7 @@
 
     %p The Sumerians also knew of Mercury since at least 5,000 years ago. It was often associated with Nabu, the god of writing. Mercury was also given separate names for its appearance as both a morning star and as an evening star. Greek astronomers knew, however, that the two names referred to the same body, and Heraclitus, around 500 B.C., correctly thought that both Mercury and Venus orbited the sun, not Earth.
     
-    %img{:src => 'https://i2.wp.com/www.astronomytrek.com/wp-content/uploads/2012/11/mercury-1.jpg?fit=678%2C381&ssl=1'}
+    %img{:src => 'https://i2.wp.com/www.astronomytrek.com/wp-content/uploads/2012/11/mercury-1.jpg?fit=678%2C381&ssl=1', :alt => 'Surface of Mercury'}
     
     %h2 A year on Mercury is just 88 days long.
     %p One solar day (the time from noon to noon on the planet’s surface) on Mercury lasts the equivalent of 176 Earth days while the sidereal day (the time for 1 rotation in relation to a fixed point) lasts 59 Earth days. Mercury is nearly tidally locked to the Sun and over time this has slowed the rotation of the planet to almost match its orbit around the Sun. Mercury also has the highest orbital eccentricity of all the planets with its distance from the Sun ranging from 46 to 70 million km.
@@ -275,7 +276,7 @@
 
     %p In ancient times, Venus was often thought to be two different stars, the evening star and the morning star — that is, the ones that first appeared at sunset and sunrise. In Latin, they were respectively known as Vesper and Lucifer. In Christian times, Lucifer, or "light-bringer," became known as the name of Satan before his fall. However, further observations of Venus in the space age show a very hellish environment. This makes Venus a very difficult planet to observe from up close, because spacecraft do not survive long on its surface.
     
-    %img{:src => 'https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2014/2-whatistheave.jpg'}
+    %img{:src => 'https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2014/2-whatistheave.jpg', :alt => 'Venus surface and atmosphere'}
     
     %h2 A day on Venus lasts longer than a year. 
     %p It takes 243 Earth days to rotate once on its axis (sidereal day). The planet’s orbit around the Sun takes 225 Earth days, compared to the Earth’s 365. A day on the surface of Venus (solar day) takes 117 Earth days.
@@ -299,7 +300,7 @@
 
     %p Earth is the fifth largest of the planets in the solar system — smaller than the four gas giants, Jupiter, Saturn, Uranusand Neptune, but larger than the three other rocky planets, 
     
-    %img{:src => 'https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&h=350'}
+    %img{:src => 'https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&h=350', :alt => 'Earth from orbit showing oceans and continents'}
     
     %h2 The Earth’s rotation is gradually slowing.
     %p This deceleration is happening almost imperceptibly, at approximately 17 milliseconds per hundred years, although the rate at which it occurs is not perfectly uniform. This has the effect of lengthening our days, but it happens so slowly that it could be as much as 140 million years before the length of a day will have increased to 25 hours.
@@ -322,7 +323,7 @@
     
     %p Mars is the fourth planet from the sun. Befitting the red planet's bloody color, the Romans named it after their god of war. The Romans copied the ancient Greeks, who also named the planet after their god of war, Ares. Other civilizations also typically gave the planet names based on its color — for example, the Egyptians named it "Her Desher," meaning "the red one," while ancient Chinese astronomers dubbed it "the fire star."
     
-    %img{:src => 'https://1.bp.blogspot.com/-ou7Je3OVg6U/WYtxDqjNp_I/AAAAAAAACSQ/fsopS5VtFg4bmlv8hQNfiRYfJqTygCotQCLcBGAs/s2048/Martian%2Blandscape%2Bby%2BAmante%2BLombardi.jpg'}
+    %img{:src => 'https://1.bp.blogspot.com/-ou7Je3OVg6U/WYtxDqjNp_I/AAAAAAAACSQ/fsopS5VtFg4bmlv8hQNfiRYfJqTygCotQCLcBGAs/s2048/Martian%2Blandscape%2Bby%2BAmante%2BLombardi.jpg', :alt => 'Martian landscape, the Red Planet'}
     
     %h2 Mars and Earth have approximately the same landmass.
     %p Even though Mars has only 15% of the Earth’s volume and just over 10% of the Earth’s mass, around two thirds of the Earth’s surface is covered in water. Martian surface gravity is only 37% of the Earth’s (meaning you could leap nearly three times higher on Mars).
@@ -346,7 +347,7 @@
 
     %p Jupiter helped revolutionize the way we saw the universe and ourselves in 1610, when Galileo discovered Jupiter's four large moons — Io, Europa, Ganymede and Callisto, now known as the Galilean moons. This was the first time that celestial bodies were seen circling an object other than Earth, major support of the Copernican view that Earth was not the center of the universe.
     
-    %img{:src => 'https://hanaleikauaivacation.com/wp-content/uploads/parser/jupiter-landscape-1.jpg'}
+    %img{:src => 'https://hanaleikauaivacation.com/wp-content/uploads/parser/jupiter-landscape-1.jpg', :alt => 'Jupiter surface texture showing cloud bands'}
     
     %h2 Jupiter is the fourth brightest object in the solar system.
     %p Only the Sun, Moon and Venus are brighter. It is one of five planets visible to the naked eye from Earth.
@@ -371,7 +372,7 @@
 
     %p Saturn is the farthest planet from Earth visible to the naked human eye, but it is through a telescope that the planet's most outstanding features can be seen: Saturn's rings. Although the other gas giants in the solar system — Jupiter, Uranus and Neptune — also have rings, those of Saturn are without a doubt the most extraordinary.
     
-    %img{:src => 'https://ak0.picdn.net/shutterstock/videos/4049260/thumb/1.jpg'}
+    %img{:src => 'https://ak0.picdn.net/shutterstock/videos/4049260/thumb/1.jpg', :alt => 'Saturn with its iconic ring system'}
     
     %h2 Saturn can be seen with the naked eye.
     %p It is the fifth brightest object in the solar system and is also easily studied through binoculars or a small telescope.
@@ -388,7 +389,6 @@
 
 %input.read{:type => 'radio', :id => 'readUranus', :name => 'uranusRead'}
 %label.closeBig{:for => 'closeUranus'}
--# CloseUranus...lol
 %input.read{:type => 'radio', :id => 'closeUranus', :name => 'uranusRead'}
 .panel
     %h1 Uranus
@@ -397,7 +397,7 @@
 
     %p British astronomer William Herschel discovered Uranus accidentally on March 13, 1781, with his telescope while surveying all stars down to those about 10 times dimmer than can be seen by the naked eye. One "star" seemed different, and within a year Uranus was shown to follow a planetary orbit.
     
-    %img{:src => 'https://www.cosmosup.com/wp-content/uploads/2016/02/Uranus-Facts-About-the-Planet-Uranus-700x325.jpg'}
+    %img{:src => 'https://www.cosmosup.com/wp-content/uploads/2016/02/Uranus-Facts-About-the-Planet-Uranus-700x325.jpg', :alt => 'Uranus, the ice giant with its tilted axis'}
     
     %h2 Uranus was officially discovered by Sir William Herschel in 1781.
     %p It is too dim to have been seen by the ancients. At first Herschel thought it was a comet, but several years later it was confirmed as a planet. Herscal tried to have his discovery named “Georgian Sidus” after King George III. The name Uranus was suggested by astronomer Johann Bode. The name comes from the ancient Greek deity Ouranos.
@@ -422,7 +422,7 @@
 
     %p Only one mission has flown by Neptune – Voyager 2 in 1989 – meaning that astronomers have done most studies using ground-based telescopes. Today, there are still many mysteries about the cool, blue planet, such as why its winds are so speedy and why its magnetic field is offset.
     
-    %img{:src => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy8Dd14tbXAzh1iz-EJl9tulRwH7Bb-SxX6sXpKFDbqb-NKwpE'}
+    %img{:src => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy8Dd14tbXAzh1iz-EJl9tulRwH7Bb-SxX6sXpKFDbqb-NKwpE', :alt => 'Neptune, the deep blue ice giant'}
     
     %h2 Neptune was not known to the ancients.
     %p It is not visible to the naked eye and was first observed in 1846. Its position was determined using mathematical predictions. It was named after the Roman god of the sea.
@@ -445,7 +445,7 @@
 
     %p In 2006, Pluto was reclassified as a dwarf planet, a change widely thought of as a demotion. The question of Pluto's planet status has attracted controversy and stirred debate in the scientific community, and among the general public, since then. In 2017, a science group (including members of the New Horizon mission) proposed a new definition of planethood based on "round objects in space smaller than stars," which would make the number of planets in our solar system expand from 8 to roughly 100.
 
-    %img{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/asd.jpeg'}
+    %img{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/asd.jpeg', :alt => 'Pluto surface texture'}
     
     %h2 Pluto is named after the Greek god of the underworld.
     %p This is a later name for the more well known Hades and was proposed by Venetia Burney an eleven year old schoolgirl from Oxford, England.

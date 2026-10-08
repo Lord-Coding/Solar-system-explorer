@@ -22,13 +22,13 @@
 
 ## 🟡 Moyen (maintenabilité & accessibilité)
 
-- [ ] **Réduire les `!important`** dans `src/style.scss` (12+ occurrences) — revoir la spécificité CSS
-- [ ] **Supprimer Font Awesome** du `dist/index.html` s'il n'est pas utilisé, sinon l'exploiter pour des icônes
-- [ ] **Ajouter `<meta name="viewport">`** dans `src/index.haml`
-- [ ] **Ajouter des attributs `alt`** sur toutes les images dans les panneaux de planètes
-- [ ] **Ajouter des `aria-label`** sur les inputs radio et les éléments interactifs (accessibilité WCAG)
+- [x] **Réduire les `!important`** dans `src/style.scss` (12+ occurrences) — revoir la spécificité CSS
+- [x] **Supprimer Font Awesome** du `dist/index.html` s'il n'est pas utilisé, sinon l'exploiter pour des icônes
+- [x] **Ajouter `<meta name="viewport">`** dans `src/index.haml`
+- [x] **Ajouter des attributs `alt`** sur toutes les images dans les panneaux de planètes
+- [x] **Ajouter des `aria-label`** sur les inputs radio et les éléments interactifs (accessibilité WCAG)
 - [ ] **Minifier le CSS** en production (`sass --style=compressed`) — `dist/style.css` fait 90KB non minifié
-- [ ] **Supprimer les commentaires de code déplacés** (ex. `# CloseUranus...lol`)
+- [x] **Supprimer les commentaires de code déplacés** (ex. `# CloseUranus...lol`)
 
 ---
 

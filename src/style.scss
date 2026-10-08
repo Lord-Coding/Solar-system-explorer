@@ -57,7 +57,7 @@ $pluto: #FF8732;
     border: 2px dashed white;
     position: absolute;
     border-radius: 3400px;
-    background: none !important;
+    background: none;
     z-index: -2;
 }
 
@@ -84,7 +84,7 @@ $pluto: #FF8732;
     border-radius: $planetSize / 2;
     background: red;
     transition: transform 2.8s .23s cubic-bezier(0.33, 0, 0, 1), opacity 2s .8s, box-shadow 0s 0s; //
-    background-size: 1140px 910px !important;
+    background-size: 1140px 910px !important; // kept: @include makePlanet uses background shorthand which resets background-size; !important is required to preserve this size
     top: auto;
     bottom: - $planetSize + $mainPlanetViewAmount;
 
@@ -204,51 +204,51 @@ body {
 
         &.mercury {
             & > .preview {
-                background: url('https://www.solarsystemscope.com/images/textures/full/2k_makemake_fictional.jpg') !important;
+                background-image: url('https://www.solarsystemscope.com/images/textures/full/2k_makemake_fictional.jpg');
             }
         }
         &.venus {
             & > .preview {
-                background: url('https://nasa3d.arc.nasa.gov/shared_assets/images/ven0aaa2/ven0aaa2-copy-428-321.jpg') !important;
+                background-image: url('https://nasa3d.arc.nasa.gov/shared_assets/images/ven0aaa2/ven0aaa2-copy-428-321.jpg');
             }
         }
         &.earth {
             & > .preview {
-                background: url('https://img00.deviantart.net/04ef/i/2009/114/3/e/new_earth_texture_map_by_lightondesigns.jpg') !important;
+                background-image: url('https://img00.deviantart.net/04ef/i/2009/114/3/e/new_earth_texture_map_by_lightondesigns.jpg');
             }
         }
         &.mars {
             & > .preview {
-                background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/mars_texture.jpg') !important;
+                background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/mars_texture.jpg');
             }
         }
 
         &.jupiter {
             & > .preview {
-                background: url('https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA07782_hires.jpg') !important;
+                background-image: url('https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA07782_hires.jpg');
             }
         }
 
         &.saturn {
             & > .preview {
-                background: url('https://www.solarsystemscope.com/images/textures/full/2k_saturn.jpg') !important;
+                background-image: url('https://www.solarsystemscope.com/images/textures/full/2k_saturn.jpg');
             }
         }
 
         &.uranus {
             & > .preview {
-                background: url('https://img00.deviantart.net/957c/i/2017/165/4/9/uranus_texture_map_by_jcpag2010-db7yjwb.png') !important;
+                background-image: url('https://img00.deviantart.net/957c/i/2017/165/4/9/uranus_texture_map_by_jcpag2010-db7yjwb.png');
             }
         }
 
         &.neptune {
             & > .preview {
-                background: url('https://img00.deviantart.net/f068/i/2017/165/b/c/neptune_texture_map_by_jcpag2010-dbcjcv5.png') !important;
+                background-image: url('https://img00.deviantart.net/f068/i/2017/165/b/c/neptune_texture_map_by_jcpag2010-dbcjcv5.png');
             }
         }
         &.pluto {
             & > .preview {
-                background: url('https://pre00.deviantart.net/4677/th/pre/f/2015/314/4/e/pluto_map__2015_nov_10__by_snowfall_the_cat-d918tlb.png') !important;
+                background-image: url('https://pre00.deviantart.net/4677/th/pre/f/2015/314/4/e/pluto_map__2015_nov_10__by_snowfall_the_cat-d918tlb.png');
             }
         }
     }
@@ -339,7 +339,7 @@ body {
             height: 30px;
             background: yellow;
             float: left;
-            background-size: auto 100% !important;
+            background-size: auto 100%;
             position: absolute;
             border-radius: 100px;
             //border: 2px solid white;
